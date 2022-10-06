@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a média?</title>
+</head>
+<body>
+    <h1> Calculando a média</h1>
+    <form action="resposta.php" method="post">
+        <label for = "Pnota"> 
+            Primeira Nota:
+        </label>
+        <br>
+        <input type="text" name="txtPnota" id="txtPnota"
+        size="10" maxlength="2" readonly
+        value="<?php echo $pNota ?>">
+        <br>
+        <label for = "Snota">
+            Segunda Nota:
+        </label>
+        <br>
+        <input type="text" name="txtSnota" id="txtSnota"
+        size="10" maxlength="2" readonly
+        value="<?php echo $SNota ?>">
+        <br>
+        <label for = "Tnota">
+            Terceira Nota:
+        </label>
+        <br>
+        <input type="text" name="TxtTnota" id="TxtTota"
+        size="10" maxlength="2" readonly
+        value="<?php echo $TNota ?>">
+        <br> <br>
+       <label for="tMEDIA">
+        MÉDIA:
+       </label>
+       <br>
+       <input type="text" name="txtMEDIA" id="tMEDIA"
+       size="10" maxlength="2" readonly
+       value="<?php echo $media ?>">
+       <br><br>
+       <label for="tSITUACAO">
+        SITUAÇÃO:
+       </label>
+       <br>
+       <input type="text" name="txtSITUACAO" id="tSITUACAO"
+       size="10" maxlength="2" readonly
+       value="<?php echo $media ?>">
+    </form>
+</body>
+</html>
